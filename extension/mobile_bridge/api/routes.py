@@ -90,7 +90,35 @@ def _save_agents():
 _load_agents()
 
 def seed_mock_agents():
-    pass
+    """Seed initial demo agents if none exist."""
+    if len(registry.get_all()) > 0:
+        return
+        
+    demo_agents = [
+        Agent(
+            id="creative-writer",
+            name="Storyteller",
+            status=AgentStatus.STOPPED,
+            last_active=datetime.now(),
+            current_task="Available for creative writing tasks.",
+            workspace=os.getcwd(),
+            meta={"tags": ["creative", "writing"], "icon": "pencil"}
+        ),
+        Agent(
+            id="code-optimizer",
+            name="RefactorBot",
+            status=AgentStatus.STOPPED,
+            last_active=datetime.now(),
+            current_task="Ready to analyze and optimize your code.",
+            workspace=os.getcwd(),
+            meta={"tags": ["code", "refactoring"], "icon": "code-slash"}
+        )
+    ]
+    
+    for agent in demo_agents:
+        registry.update_agent(agent)
+    
+    print(f"Seeded {len(demo_agents)} demo agents.")
 
 def _call_llm(prompt: str, model_name: str = "gemini-2.0-flash", temperature: float = 0.7) -> str:
     """Call LLM (NVIDIA NIM or Google Gemini)."""
