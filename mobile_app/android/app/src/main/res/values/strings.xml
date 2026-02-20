@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Antone</string>
+    <string name="title_activity_main">Antone</string>
+    <string name="package_name">com.antone.app</string>
+    <string name="custom_url_scheme">com.antone.app</string>
+</resources>

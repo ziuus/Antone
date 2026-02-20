@@ -1,0 +1,188 @@
+{
+  "agents": [
+    {
+      "id": "agent-research-9201",
+      "name": "Research Agent",
+      "status": "running",
+      "last_active": "2026-02-19T19:29:05.411779",
+      "current_task": "Summarizing arxiv papers on LLMs",
+      "workspace": "/home2/home/dovndev/Projects/Antone",
+      "meta": {
+        "model": "gemini-2.0-flash",
+        "tasks_completed": 42
+      }
+    },
+    {
+      "id": "agent-code-38e6",
+      "name": "Code Assistant",
+      "status": "waiting_approval",
+      "last_active": "2026-02-19T19:29:05.412002",
+      "current_task": "Refactor auth module \u2014 awaiting approval",
+      "workspace": "/home2/home/dovndev/Projects/Antone",
+      "meta": {
+        "model": "gemini-2.0-flash",
+        "tasks_completed": 17
+      }
+    },
+    {
+      "id": "playground-main",
+      "name": "Assistant",
+      "status": "running",
+      "last_active": "2026-02-19T19:45:15.950310",
+      "current_task": "Chat: list files...",
+      "workspace": "/home2/home/dovndev/Projects/Antone",
+      "meta": {
+        "source": "playground",
+        "model": "gemini-2.0-flash"
+      }
+    }
+  ],
+  "logs": {
+    "agent-research-9201": [
+      {
+        "timestamp": "2026-02-19T19:29:05.412032",
+        "level": "info",
+        "message": "Agent 'Research Agent' initialized in /home2/home/dovndev/Projects/Antone."
+      }
+    ],
+    "agent-code-38e6": [
+      {
+        "timestamp": "2026-02-19T19:29:05.412041",
+        "level": "info",
+        "message": "Agent 'Code Assistant' initialized in /home2/home/dovndev/Projects/Antone."
+      }
+    ],
+    "playground-main": [
+      {
+        "timestamp": "2026-02-19T19:33:39.138328",
+        "level": "user",
+        "message": "hello assistant"
+      },
+      {
+        "timestamp": "2026-02-19T19:33:41.407890",
+        "level": "agent",
+        "message": "Hello! I'm here to help you manage your software project. What would you like to do today? Would you like to run a command, check the files in your project, or read the contents of a specific file? Remember, we're currently working in the /home2/home/dovndev/Projects/Antone directory."
+      },
+      {
+        "timestamp": "2026-02-19T19:34:01.718714",
+        "level": "user",
+        "message": "list files in extension/mobile_bridge"
+      },
+      {
+        "timestamp": "2026-02-19T19:34:03.021035",
+        "level": "info",
+        "message": "Executing: list extension/mobile_bridge"
+      },
+      {
+        "timestamp": "2026-02-19T19:34:05.486764",
+        "level": "agent",
+        "message": "It seems like the 'extension/mobile_bridge' directory does not exist in the current workspace. The list tool returned a 404 error, which indicates that the path was not found.\n\nTo confirm, I'll check the current workspace root. We are currently in '/home2/home/dovndev/Projects/Antone'. If you'd like to create the 'extension/mobile_bridge' directory or list files in a different directory, please let me know."
+      },
+      {
+        "timestamp": "2026-02-19T19:44:41.427713",
+        "level": "user",
+        "message": "list files"
+      },
+      {
+        "timestamp": "2026-02-19T19:44:42.634461",
+        "level": "info",
+        "message": "Executing: list ."
+      },
+      {
+        "timestamp": "2026-02-19T19:44:54.921212",
+        "level": "agent",
+        "message": "The current workspace root is /home2/home/dovndev/Projects/Antone. \n\nThe directory listing shows the following directories: \n- antigravity-source\n- AppImages\n- Applications\n- bin\n- bytebot\n- caelestia\n- Clone\n- Desktop\n- dev\n- docs\n- Documents\n- dotfiles\n- Downloads\n- go\n- HyDE\n- jvm \n\nThese directories are likely to be project-specific or development-related. There are no files listed in the output, only directories.\n\nWould you like to explore any of these directories further?"
+      },
+      {
+        "timestamp": "2026-02-19T19:44:54.993229",
+        "level": "user",
+        "message": "switch workspace to /home2/home/dovndev"
+      },
+      {
+        "timestamp": "2026-02-19T19:44:56.034176",
+        "level": "info",
+        "message": "Executing: switch /home2/home/dovndev"
+      },
+      {
+        "timestamp": "2026-02-19T19:44:57.262307",
+        "level": "agent",
+        "message": "The workspace has been successfully switched to /home2/home/dovndev. I'm ready to assist with the new project context. What would you like to do next in this workspace?"
+      },
+      {
+        "timestamp": "2026-02-19T19:44:57.273137",
+        "level": "user",
+        "message": "list files"
+      },
+      {
+        "timestamp": "2026-02-19T19:44:58.917599",
+        "level": "info",
+        "message": "Executing: list ./"
+      },
+      {
+        "timestamp": "2026-02-19T19:45:03.612597",
+        "level": "agent",
+        "message": "Here's a list of the files and directories in the root of the project:\n\n* AppImages (directory)\n* batman-deb (directory)\n* bind-test (directory)\n* brave-browser (directory)\n* Desktop (directory)\n* Documents (directory)\n* Downloads (directory)\n* eclipse-workspace (directory)\n* gem5 (directory)\n* IdeaProjects (directory)\n* Kiro Workspaces (directory)\n* Lind-Test (directory)\n* Morningstar (directory)\n* Music (directory)\n* Noel (directory)\n* NX (directory)\n\nAnd many more... The output is quite long, so I'll stop here. If you'd like to explore a specific directory or perform an action on a file, just let me know!"
+      },
+      {
+        "timestamp": "2026-02-19T19:45:03.633754",
+        "level": "user",
+        "message": "switch workspace to /home2/home/dovndev/Projects/Antone"
+      },
+      {
+        "timestamp": "2026-02-19T19:45:04.854706",
+        "level": "info",
+        "message": "Executing: switch /home2/home/dovndev/Projects/Antone"
+      },
+      {
+        "timestamp": "2026-02-19T19:45:06.379743",
+        "level": "agent",
+        "message": "The workspace has been successfully switched to /home2/home/dovndev/Projects/Antone. What would you like to do next in the Antone project?"
+      },
+      {
+        "timestamp": "2026-02-19T19:45:06.405811",
+        "level": "user",
+        "message": "list files"
+      },
+      {
+        "timestamp": "2026-02-19T19:45:08.118189",
+        "level": "info",
+        "message": "Executing: list ./"
+      },
+      {
+        "timestamp": "2026-02-19T19:45:11.748420",
+        "level": "user",
+        "message": "switch workspace to /home2/home/dovndev/Projects/Antone"
+      },
+      {
+        "timestamp": "2026-02-19T19:45:12.319181",
+        "level": "agent",
+        "message": "The project root contains several directories, including 'extension' and 'mobile_app', as well as files such as 'DEPLOYMENT.md' and 'patch_agents.py'. If you would like to list the files within the 'extension' or 'mobile_app' directories, I can use the List Files tool again with the updated path. Which directory would you like to explore further?"
+      },
+      {
+        "timestamp": "2026-02-19T19:45:13.340676",
+        "level": "info",
+        "message": "Executing: switch /home2/home/dovndev/Projects/Antone"
+      },
+      {
+        "timestamp": "2026-02-19T19:45:15.933656",
+        "level": "agent",
+        "message": "We're good to go. The workspace has been confirmed as /home2/home/dovndev/Projects/Antone. What would you like to do next in this project?"
+      },
+      {
+        "timestamp": "2026-02-19T19:45:15.950343",
+        "level": "user",
+        "message": "list files"
+      },
+      {
+        "timestamp": "2026-02-19T19:45:25.219462",
+        "level": "info",
+        "message": "Executing: list ."
+      },
+      {
+        "timestamp": "2026-02-19T19:45:25.837942",
+        "level": "agent",
+        "message": "Error calling LLM: 404 models/test-model is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+      }
+    ]
+  }
+}
