@@ -44,7 +44,7 @@ PORT=8001 python -m mobile_bridge
 You can build the source or install the release APK.
 
 **Option A: Install Release APK**
-Transfer `mobile_app/android/app/build/outputs/apk/release/app-release.apk` to your phone.
+Transfer `releases/antone-release-v0.1.0.apk` to your phone.
 
 **Option B: Build from Source**
 ```bash
