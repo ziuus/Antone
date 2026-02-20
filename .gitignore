@@ -32,6 +32,13 @@ mobile_app/android/local.properties
 mobile_app/android/.idea
 *.iml
 
+# Android Keys
+*.keystore
+*.jks
+*.p12
+*.pem
+mobile_app/android/key.properties
+
 # IDE
 .vscode/
 .idea/
