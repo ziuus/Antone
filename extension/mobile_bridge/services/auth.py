@@ -13,7 +13,7 @@ class AuthService:
         self.pairing_key = self._load_or_generate_pairing_key()
 
     def _load_or_generate_pairing_key(self) -> str:
-        return "manual_test_key"
+        return secrets.token_urlsafe(16)
 
     def get_pairing_key(self) -> str:
         return self.pairing_key
