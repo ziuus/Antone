@@ -65,7 +65,16 @@ export default function Playground() {
 
             {showSettings && (
                 <div className="card" style={{ padding: '1rem', animation: 'fadeUp 0.2s ease-out' }}>
-                    <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--text-3)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>System Prompt</label>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                        <label style={{ fontSize: '0.7rem', fontWeight: 700, color: 'var(--text-3)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>System Prompt</label>
+                        <button 
+                            onClick={() => { setSystemPrompt(''); setModel('gemini-2.0-flash'); }}
+                            className="btn btn-ghost" 
+                            style={{ padding: '0.25rem 0.5rem', fontSize: '0.7rem', color: 'var(--text-3)', height: 'auto' }}
+                        >
+                            Reset Defaults
+                        </button>
+                    </div>
                     <textarea
                         value={systemPrompt}
                         onChange={e => setSystemPrompt(e.target.value)}
