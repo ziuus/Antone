@@ -1,60 +1,46 @@
-# Antone: Local-First AI Bridge
+# 📱 Antone
 
-**Your Mobile Command Center for Local AI Agents.**
+> **Agentic Mobile Command Center — Bridging your local workspace intelligence to your palms with zero-latency synchronization.**
 
-Antone bridges the gap between your mobile device and your local development environment. It provides a secure, persistent chat interface to interact with AI agents running on your machine, mirrors your workspace context, and allows for seamless tool execution—all without relying on cloud-based headers or external relays.
+Antone is a high-performance, local-first bridge that transforms your mobile device into a powerful extension of your engineering environment. It allows you to interact with local AI agents, execute workspace tools, and monitor complex system states from anywhere within your network, effectively putting your "IDE in your palms."
 
-## 🚀 Features
+## ⚡ Core Features
 
--   **Local-First Design**: No data leaves your network unless you configure it.
--   **Persistent Chat**: Agents remember your conversation context.
--   **Workspace Integration**: Bridge directly to your IDE or local backend.
--   **Secure Pairing**: Encrypted token exchange for authorized mobile access.
--   **Extensible**: Python-based backend extension and React/Capacitor mobile app.
+- **Workspace Intelligence Bridge**: Real-time synchronization between your local development context and mobile interface.
+- **Local-First Security**: Peer-to-peer communication over local infrastructure—your data never touches external relays.
+- **Secure Pairing Protocol**: High-entropy token exchange for authorized mobile-to-desktop access.
+- **Agentic Tool Execution**: Remotely trigger build scripts, tests, and agentic workflows directly from the Antone mobile app.
+- **Cross-Platform Mobility**: Built with **React Native / Capacitor** for fluid, native performance on Android and iOS.
 
-## 🛠️ Security Notice
+## 🛠 Tech Stack
 
-**This project is designed for local network use (LAN/Wi-Fi).**
+- **Backend**: Python 3.10+ (FastAPI / WebSockets)
+- **Mobile**: React + Capacitor + Tailwind CSS
+- **Intelligence**: Integrated with local LLM providers and the **Gemini CLI** ecosystem.
+- **Security**: Local network encryption + persistent pairing keys.
 
--   **Transport**: Communications occur over HTTP/WebSocket on Port 8001.
--   **Recommendation**: Run this within a trusted local network. If exposing to the internet, **you must use a reverse proxy (Nginx/Traefik) with SSL/TLS**.
--   **Secrets**: The pairing key is generated locally (`.mobile_bridge_pairing_key`). **Do not commit this file.**
+## 🚀 Getting Started
 
-## 🏁 Getting Started
-
-### Prerequisites
-
--   **Python 3.10+** (Backend)
--   **Node.js 18+** & **Java 21** (Mobile Build)
-
-### 1. Backend Setup (Extension)
-
+### 1. Backend Synchronization
 ```bash
 cd extension
-python -m venv .venv
-source .venv/bin/activate
+python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 PORT=8001 python -m mobile_bridge
 ```
 
-*Note the pairing key printed in the logs.*
-
-### 2. Mobile App
-
-You can build the source or install the release APK.
-
-**Option A: Install Release APK**
-Transfer `releases/antone-release-v0.1.0.apk` to your phone.
-
-**Option B: Build from Source**
+### 2. Mobile Deployment
+Transfer the latest APK from the `releases/` directory or build from source:
 ```bash
 cd mobile_app
-npm install
-npx cap sync android
-cd android
-./gradlew assembleRelease
+npm install && npx cap sync android
 ```
 
-## 🤝 Contributing
+## 📂 Project Structure
 
-MIT License. Pull requests are welcome!
+- `extension/`: Python-based mobile bridge and workspace connector.
+- `mobile_app/`: High-fidelity React frontend for mobile interaction.
+- `releases/`: Production-ready binaries for instant deployment.
+
+---
+*Antone: Engineering Without Boundaries.*
