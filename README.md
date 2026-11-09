@@ -4,6 +4,10 @@
 
 Antone is a high-performance, local-first bridge that transforms your mobile device into a powerful extension of your engineering environment. It allows you to interact with local AI agents, execute workspace tools, and monitor complex system states from anywhere within your network, effectively putting your "IDE in your palms."
 
+> Building this in the open — if it saves you time, a star helps others find it.
+> Found a bug, or have an idea? [Open an issue](https://github.com/ziuus/Antone/issues).
+> Bug reports with your phone and OS version help most.
+
 ## ⚡ Core Features
 
 - **Workspace Intelligence Bridge**: Real-time synchronization between your local development context and mobile interface.
